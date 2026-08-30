@@ -1,0 +1,19 @@
+# Quest Voice Changer Configuration
+
+audio:
+  sample_rate: 48000
+  chunk_size: 2048
+  input_device: null  # null = default, or specify device index
+  output_device: null
+
+processing:
+  pitch_shift: 0  # semitones (-12 to 12)
+  speed_factor: 1.0  # 0.5 to 2.0
+  voice_strength: 0.5  # 0 to 1.0 (how much to blend voice characteristics)
+  normalize: true
+
+voice:
+  default_voice: null  # name of default voice to load
+  auto_load_voices: true
+
+# Available voices will be automatically populated in voices/voices.yaml
